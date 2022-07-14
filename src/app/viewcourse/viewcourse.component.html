@@ -1,36 +1,21 @@
 <div class="container">
-  <div class="row div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-      <div class="row g-3">
-           <table class="table">
-                  <thead class="table-success">
-
-                    <tr>
-  <div class="row">
-      <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
-          <table class="table">
-              <thead class="table-success">
-                  <tr>
-                      <th scope="col">_id</th>
-                      <th scope="col">courseTitle</th>
-                      <th scope="col">courseDescription</th>
-                      <th scope="col">courseDuration</th>
-                      <th scope="col">courseDate</th>
-                      <th scope="col">courseVenue</th>
-                    
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor ="let i of data">
-                      <th scope="row">{{i._id}}</th>
-                      <td>{{i.courseTitle}}</td>
-                      <td>{{i.courseDescription}}</td>
-                      <td>{{i.courseDuration}}</td>
-                      <td>{{i.courseDate}}</td>
-                      <td>{{i.courseVenue}}</td>
-
-                    </tr>
-                   
-                  </tbody>
-                </table>
-          </div>
+  <div class="row ">
+     <div *ngFor="let i of data" class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+        <div class="row g-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+                <h5 class="card-title">{{i._id}}</h5>
+                <p class="card-text">{{i.courseTitle}}</p>
+                <p class="card-text">{{i.courseDescription}}</p>
+                <p class="card-text">{{i.courseDuration}}</p>
+                <p class="card-text">{{i.courseDate}}</p>
+                <p class="card-text">{{i.courseVenue}}</p>
+              </div>
+      </div>
+    </div>
+      </div>
   </div>
+</div>
+
+/
+              
