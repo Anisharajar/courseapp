@@ -29,6 +29,6 @@ Addcourse() {
   )
   
 
-  alert ("suceess");
+  alert ("success");
 }
 }
